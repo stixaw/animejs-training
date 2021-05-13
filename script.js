@@ -1,3 +1,11 @@
+anime({
+  targets: '.animateMe',
+  easing: 'linear',
+  translateX: 300,
+  duration: 9000,
+  loop: true
+})
+
 /**
  * Animates 6x6 blocks to CHG letters
  */
@@ -18,7 +26,6 @@ anime({
   targets: [
     '#C .div9',
     '#C .div10',
-    '#C .div11',
     '#C .div15',
     '#C .div16',
     '#C .div17',
@@ -28,8 +35,7 @@ anime({
     '#C .div23',
     '#C .div24',
     '#C .div27',
-    '#C .div28',
-    '#C .div29'
+    '#C .div28'
   ],
   opacity: [1, 0],
   easing: 'linear',
@@ -80,17 +86,13 @@ anime({
   targets: [
     '#G .div9',
     '#G .div10',
-    '#G .div11',
-    '#G .div12',
     '#G .div15',
     '#G .div16',
     '#G .div17',
     '#G .div18',
     '#G .div21',
-    '#G .div22',
     '#G .div27',
-    '#G .div28',
-    '#G .div29'
+    '#G .div28'
   ],
   opacity: [1, 0],
   easing: 'linear',
