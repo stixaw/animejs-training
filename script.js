@@ -24,7 +24,8 @@ anime({
   easing: 'linear',
   translateX: '50%',
   duration: 9000,
-  loop: 1
+  loop: true,
+  direction: 'alternate'
 })
 
 /**
