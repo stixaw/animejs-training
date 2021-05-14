@@ -1,5 +1,10 @@
 body {
   background-color: #222;
+  margin: 0;
+
+}
+
+.animateMe {
   color: #fff;
   font-weight: 800;
   font-size: 50pt;
@@ -7,10 +12,18 @@ body {
   align-items: top;
   justify-content: top;
   text-align: top;
-  font-family: "Comic Sans", sans-serif;
+  font-family: "Avenir";
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
+}
+
+#container{
+  background-image: url('./images/CHGCoreValuesGraphic.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
 }
 
 .letter-C {
@@ -54,7 +67,7 @@ span {
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 250px;
+  top: 150px;
   left: 150px;
 }
 
@@ -67,8 +80,8 @@ span {
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 300px;
-  left: 450px;
+  top: 375px;
+  left: 200px;
 }
 
 .grid-container#G{
@@ -80,8 +93,8 @@ span {
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 350px;
-  left: 750px;
+  top: 600px;
+  left: 250px;
 }
   /* row start / column start/ row end/ column end  */
 .div1 { grid-area: 1 / 1 / 2 / 2; }

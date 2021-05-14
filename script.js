@@ -1,9 +1,30 @@
+var bgImageArray = ["CHGCoreValuesGraphic.png", "CHGLOGO.png"],
+base = "/images/",
+secs = 4;
+bgImageArray.forEach(function(img){
+    new Image().src = base + img; 
+    // caches images, avoiding white flash between background replacements
+});
+
+function backgroundSequence() {
+  window.clearTimeout();
+  var k = 0;
+  for (i = 0; i < bgImageArray.length; i++) {
+    setTimeout(function(){ 
+      document.getElementById('container').style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center";
+    if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 2300))} else { k++; }      
+    }, (secs * 2300) * i) 
+  }
+}
+
+backgroundSequence()
+
 anime({
   targets: '.animateMe',
   easing: 'linear',
-  translateX: 300,
+  translateX: '50%',
   duration: 9000,
-  loop: true
+  loop: 1
 })
 
 /**
